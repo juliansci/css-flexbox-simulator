@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const AppLayout = styled.div`
    display: grid;
-   grid-template-rows: 70px 1fr 50px;
+   grid-template-rows: 70px minmax(200px , auto) 50px;
    grid-template-columns: 1fr;
    width: 100vw;
    height: 100vh;
@@ -15,17 +15,17 @@ export const HeaderLayout = styled.div`
 export const ContentLayout = styled.div`
    display: grid;
    grid-template-rows: 1fr;
-   grid-template-columns: 30% 70%;
+   grid-template-columns: 40% 60%;
 `;
 
-export const ActionLayout = styled.div`
+export const FlexboxActionLayout = styled.div`
    grid-column: 1 / 2;
-   background-color: blue;
+   overflow-y: scroll;
 `;
 
-export const SimulatorLayout = styled.div`
+export const FlexboxSimulatorLayout = styled.div`
    grid-column-start: 2;
-   background-color: red;
+   overflow: auto;
 `;
 
 
