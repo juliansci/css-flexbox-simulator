@@ -16,6 +16,7 @@
     "react-fontawesome": "^1.7.1",
     "react-radio-buttons": "^1.2.2",
     "react-scripts": "3.4.1",
+    "reactjs-popup": "^1.5.0",
     "styled-components": "^5.1.1"
   },
   "scripts": {
@@ -24,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

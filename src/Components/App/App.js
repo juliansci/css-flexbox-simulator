@@ -17,7 +17,7 @@ class App extends Component{
         'flexDirection': 'row',
         'flexWrap': 'wrap'
       }
-    };  
+    };
   }
 
   updateStateActions = async (toUpdate)  => {

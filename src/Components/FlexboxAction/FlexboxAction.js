@@ -6,10 +6,12 @@ import {
   FlexboxActionSectionItemsContainer,
   FlexboxActionSectionItem,
   FlexboxActionSectionItemTitle,
-  FlexboxActionSectionItemOptions,
-  FlexboxActionSectionOption
+  FlexboxActionSectionItemOptions
 } from './styled';
 import { RadioGroup, ReversedRadioButton } from '../RadioButton/RadioButton';
+import Popup from "reactjs-popup";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 class FlexboxAction extends Component {
   
@@ -20,7 +22,7 @@ class FlexboxAction extends Component {
       'alignItems': 'flex-start',
       'flexDirection': 'row',
       'flexWrap': 'wrap'
-    };  
+    };
   }
 
   async onChangeOption(style, value) {
@@ -39,6 +41,37 @@ class FlexboxAction extends Component {
             <FlexboxActionSectionItem>
               <FlexboxActionSectionItemTitle>
                 Justify Content:
+                <Popup trigger={<FontAwesomeIcon icon={faTwitter}/>} modal>
+                  {close => (
+                    <div className="modal">
+                      <a className="close" onClick={close}>
+                        &times;
+                      </a>
+                      <div className="header"> Modal Title </div>
+                      <div className="content">
+                        {" "}
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
+                        Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
+                        delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
+                        commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
+                        explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+                      </div>
+                      <div className="actions">
+                                <button
+                                  className="button"
+                                  onClick={() => {
+                                    console.log("modal closed ");
+                                    close();
+                                  }}
+                                >
+                                  Entendido!
+                                </button>
+                              </div>
+                            </div>
+                          )}
+                        </Popup>
               </FlexboxActionSectionItemTitle>
               <FlexboxActionSectionItemOptions>
               <RadioGroup onChange={ (value) => this.onChangeOption('justifyContent', value) } value={this.state.justifyContent} horizontal>
@@ -126,6 +159,7 @@ class FlexboxAction extends Component {
           </FlexboxActionSectionItemsContainer>
         </FlexboxActionSection>
       </FlexboxActionContainer>
+
     );
   }
 }
