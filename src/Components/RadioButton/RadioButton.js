@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// https://github.com/mu29/react-radio-buttons
+// Forked from https://github.com/mu29/react-radio-buttons
 
 function getInitialCheckedIndex(children) {
   let checkedIndex;

@@ -13,15 +13,15 @@ class App extends Component{
     this.state = {
       'simulator': {
         'justifyContent': 'flex-start',
-        'alignItems': 'flex-start',
+        'alignItems': 'stretch',
         'flexDirection': 'row',
-        'flexWrap': 'wrap'
+        'flexWrap': 'nowrap',
+        'alignContent': 'stretch'
       }
     };
   }
 
   updateStateActions = async (toUpdate)  => {
-    console.log('toUpdate: ', toUpdate);
     await this.setState({'simulator': {
       ...toUpdate
     }});

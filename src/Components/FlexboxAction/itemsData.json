@@ -1,0 +1,144 @@
+[
+  {
+    "id": "justifyContent",
+    "title": "Justify Content",
+    "values": ["flex-start", "flex-end", "center", "space-between", "space-around"],
+    "documentation":{
+      "globalDescription": "The <b>justify-content</b> property is used to align the flex items.",
+      "valuesDescription": [
+        {
+          "id": "flex-start",
+          "description": "The <b>flex-start</b> value aligns the flex items at the beginning of the container. <em>This is default</em>."
+        },
+        {
+          "id": "flex-end",
+          "description": "The <b>flex-end</b> value aligns the flex items at the end of the container."
+        },
+        {
+          "id": "center",
+          "description": "The <b>center</b> value aligns the flex items at the center of the container."
+        },
+        {
+          "id": "space-between",
+          "description": "The <b>space-between</b> value displays the flex items with space between the lines."
+        },
+        {
+          "id": "space-around",
+          "description": "The <b>space-around</b> value displays the flex items with space before, between, and after the lines."
+        }
+      ]
+    }
+  },
+  {
+    "id": "flexWrap",
+    "title": "Flex Wrap",
+    "values": ["nowrap", "wrap", "wrap-reverse"],
+    "documentation":{
+      "globalDescription": "The <b>flex-wrap</b> property specifies whether the flex items should wrap or not.",
+      "valuesDescription": [
+        {
+          "id": "nowrap",
+          "description": "The <b>nowrap</b> value specifies that the flex items will not wrap. <em>This is default</em>."
+        },
+        {
+          "id": "wrap",
+          "description": "The <b>wrap</b> value specifies that the flex items will wrap if necessary."
+        },
+        {
+          "id": "wrap-reverse",
+          "description": "The <b>wrap-reverse</b> value specifies that the flexible items will wrap if necessary, in reverse order."
+        }
+      ]
+    }
+  },
+  {
+    "id": "alignItems",
+    "title": "Align Items",
+    "values": ["stretch", "flex-start", "flex-end", "center", "baseline"],
+    "documentation":{
+      "globalDescription": "The <b>align-items</b> property is used to align the flex items vertically.",
+      "valuesDescription": [
+        {
+          "id": "stretch",
+          "description": "The <b>stretch</b> value stretches the flex items to fill the container. <em>This is default</em>."
+        },
+        {
+          "id": "flex-start",
+          "description": "The <b>flex-start</b> value aligns the flex items at the top of the container."
+        },
+        {
+          "id": "flex-end",
+          "description": "The <b>flex-end</b> value aligns the flex items at the bottom of the container."
+        },
+        {
+          "id": "center",
+          "description": "The <b>center</b> value aligns the flex items in the middle of the container."
+        },
+        {
+          "id": "baseline",
+          "description": "The <b>baseline</b> value aligns the flex items such as their baselines aligns."
+        }
+      ]
+    }
+  },
+  {
+    "id": "flexDirection",
+    "title": "Flex Direction",
+    "values": ["row", "row-reverse", "column", "column-reverse"],
+    "documentation":{
+      "globalDescription": "The <b>flex-direction</b> property defines in which direction the container wants to stack the flex items.",
+      "valuesDescription": [
+        {
+          "id": "row",
+          "description": "The <b>row</b> value stacks the flex items horizontally (from left to right). <em>This is the default</em>."
+        },
+        {
+          "id": "row-reverse",
+          "description": "The <b>row-reverse</b> value stacks the flex items horizontally (but from right to left)."
+        },
+        {
+          "id": "column",
+          "description": "The <b>column</b> value stacks the flex items vertically (from top to bottom)."
+        },
+        {
+          "id": "column-reverse",
+          "description": "The <b>column-reverse</b> value stacks the flex items vertically (but from bottom to top)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "alignContent",
+    "title": "Align Content",
+    "values": ["stretch", "flex-start", "flex-end", "center", "space-between", "space-around"],
+    "documentation":{
+      "globalDescription": "The <b>align-content</b> property is used to align the flex lines.",
+      "valuesDescription": [
+        {
+          "id": "stretch",
+          "description": "The <b>stretch</b> value stretches the flex lines to take up the remaining space. <em>This is default</em>."
+        },
+        {
+          "id": "flex-start",
+          "description": "The <b>flex-start</b> value displays the flex lines at the start of the container."
+        },
+        {
+          "id": "flex-end",
+          "description": "The <b>flex-end</b> value displays the flex lines at the end of the container."
+        },
+        {
+          "id": "center",
+          "description": "The <b>center</b> value displays display the flex lines in the middle of the container."
+        },
+        {
+          "id": "space-between",
+          "description": "The <b>space-between</b> value displays the flex lines with equal space between them."
+        },
+        {
+          "id": "space-around",
+          "description": "The <b>space-around</b> value displays the flex lines with space before, between, and after them."
+        }
+      ]
+    }
+  }
+]

@@ -7,10 +7,12 @@ export const FlexboxSimulatorContainer = styled.div`
   background-image: url(${props => props.backgroundImg});
   background-size: cover;
   display: flex;
-  justify-content: ${props => props.simulatorProps.justifyContent || 'flex-start' };
-  align-items: ${props => props.simulatorProps.alignItems || 'flex-start' };
-  flex-direction: ${props => props.simulatorProps.flexDirection || 'row' };
-  flex-wrap: ${props => props.simulatorProps.flexWrap || 'wrap' };
+  justify-content: ${props => props.simulatorProps.justifyContent};
+  align-items: ${props => props.simulatorProps.alignItems};
+  flex-direction: ${props => props.simulatorProps.flexDirection};
+  flex-wrap: ${props => props.simulatorProps.flexWrap};
+  align-content: ${props => props.simulatorProps.alignContent};
+
 
 `
 
