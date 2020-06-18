@@ -9,12 +9,38 @@ export const FlexboxActionContainer = styled.div`
 
 export const FlexboxActionSection = styled.div`  
    margin-top: 20px;
+   position:relative;
 `
+
+export const FlexboxActionHeader = styled.div`
+   display:flex;
+   flex-wrap: wrap;
+`
+
 export const FlexboxActionSectionTitle = styled.div` 
    font-size: 20px;
    font-weight: 700;
+   flex-grow: 1;
 `
-export const FlexboxActionSectionItemsContainer = styled.div`  
+export const FlexboxActionButton = styled.div` 
+   font-size: 16px;
+   padding: 10px;
+   text-align: center;
+   color: white;
+   cursor: pointer;
+   width: 20px;
+`
+
+export const FlexboxActionButtonAdd = styled(FlexboxActionButton)`
+   background-color: green;
+`
+
+export const FlexboxActionButtonRemove = styled(FlexboxActionButton)`
+   background-color: red;
+   margin-right: 10px;
+`
+
+export const FlexboxActionSectionItemsContainer = styled.div`
 `
 
 export const FlexboxActionSectionItem = styled.div`  

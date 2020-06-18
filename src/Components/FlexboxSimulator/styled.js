@@ -24,6 +24,6 @@ export const FlexboxSimulatorItem = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size:22px;
+   font-size:40px;
    font-weight: bolder;
 `;

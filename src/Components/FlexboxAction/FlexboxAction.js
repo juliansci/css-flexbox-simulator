@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import {
   FlexboxActionContainer,
   FlexboxActionSection,
+  FlexboxActionHeader,
   FlexboxActionSectionTitle,
   FlexboxActionSectionItemsContainer,
   FlexboxActionSectionItem,
   FlexboxActionSectionItemTitle,
-  FlexboxActionSectionItemOptions
+  FlexboxActionSectionItemOptions,
+  FlexboxActionButtonAdd,
+  FlexboxActionButtonRemove
 } from './styled';
 import { RadioGroup, ReversedRadioButton } from '../RadioButton/RadioButton';
 import FlexboxActionPopup from '../FlexboxActionPopup/FlexboxActionPopup';
@@ -32,11 +35,16 @@ class FlexboxAction extends Component {
     this.props.updateValues(this.state);
   }
 
+
   render() {
     return (
       <FlexboxActionContainer>
         <FlexboxActionSection>
-          <FlexboxActionSectionTitle>Container Properties</FlexboxActionSectionTitle>
+          <FlexboxActionHeader>
+            <FlexboxActionSectionTitle>Container Properties</FlexboxActionSectionTitle>
+            <FlexboxActionButtonRemove onClick={this.props.removeItem}>-</FlexboxActionButtonRemove>
+            <FlexboxActionButtonAdd onClick={this.props.addItem}>+</FlexboxActionButtonAdd>
+          </FlexboxActionHeader>
           <FlexboxActionSectionItemsContainer>
             {flexboxActionItemsData.map((flexboxActionItemData, index) => {
               return (<FlexboxActionSectionItem key={index}>

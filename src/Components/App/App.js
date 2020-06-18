@@ -11,6 +11,7 @@ class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
+      'itemsQuantity': 3,
       'simulator': {
         'justifyContent': 'flex-start',
         'alignItems': 'stretch',
@@ -28,6 +29,22 @@ class App extends Component{
     console.log('state app', this.state);
   }
 
+  removeItem = () => {
+    const itemsQuantity = this.state.itemsQuantity;
+    if(itemsQuantity > 1){
+      const newValue = itemsQuantity - 1;
+      this.setState({itemsQuantity: newValue});
+    }
+  }
+
+  addItem = () => {
+    const itemsQuantity = this.state.itemsQuantity;
+    if(itemsQuantity < 20){
+      const newValue = itemsQuantity + 1;
+      this.setState({itemsQuantity: newValue});
+    }
+  }
+
   render() {
     return (
       <AppLayout>
@@ -36,10 +53,10 @@ class App extends Component{
         </HeaderLayout>
         <ContentLayout>
           <FlexboxActionLayout>
-            <FlexboxAction updateValues={this.updateStateActions}/>
+            <FlexboxAction updateValues={this.updateStateActions} removeItem={this.removeItem} addItem={this.addItem}/>
           </FlexboxActionLayout>
           <FlexboxSimulatorLayout>
-            <FlexboxSimulator values={this.state.simulator}/>
+            <FlexboxSimulator values={this.state.simulator} itemsQuantity={this.state.itemsQuantity} />
           </FlexboxSimulatorLayout>
         </ContentLayout>
         <FooterLayout>

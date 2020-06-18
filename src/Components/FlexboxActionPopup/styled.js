@@ -17,7 +17,6 @@ export const FlexboxActionPopupContent = styled.div`
 `
 
 export const FlexboxActionPopupActionClose = styled.div`
-   cursor: pointer;
    position: absolute;
    display: block;
    padding: 2px 5px;

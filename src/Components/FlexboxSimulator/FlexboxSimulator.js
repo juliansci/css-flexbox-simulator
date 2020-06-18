@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import { FlexboxSimulatorContainer, FlexboxSimulatorItem } from './styled';
-import backgroundSimulator from './background-simulator.png';
+import backgroundSimulator from './background-simulator.jpg';
 
 class FlexboxSimulator extends Component {
 
   render() {
-    console.log('props simulator: ', this.props.values);
-    return (<FlexboxSimulatorContainer backgroundImg={backgroundSimulator} simulatorProps={this.props.values}>
-          <FlexboxSimulatorItem>1</FlexboxSimulatorItem>
-          <FlexboxSimulatorItem>2</FlexboxSimulatorItem>
-          <FlexboxSimulatorItem>3</FlexboxSimulatorItem>
+    const {itemsQuantity, values} = this.props;
+    console.log('itemsQuantity: ', itemsQuantity);
+    return (<FlexboxSimulatorContainer backgroundImg={backgroundSimulator} simulatorProps={values}>
+          {Array.apply(null, { length: itemsQuantity }).map((e, index) => {
+            return (<FlexboxSimulatorItem>
+              {index + 1}
+            </FlexboxSimulatorItem>);
+          
+          })}
     </FlexboxSimulatorContainer>);
   }
 }
