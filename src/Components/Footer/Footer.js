@@ -10,13 +10,13 @@ class Footer extends Component {
           Julián Scialabba
        </FooterText>
        <FooterSocial>
-         <SocialItem href="http://twitter.com/juliansci">
+         <SocialItem href="http://twitter.com/juliansci" target="_blank">
           <FontAwesomeIcon icon={faTwitter}/>
          </SocialItem>
-         <SocialItem href="https://www.linkedin.com/in/julianscialabba/">
+         <SocialItem href="https://www.linkedin.com/in/julianscialabba/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
          </SocialItem>
-         <SocialItem href="http://github.com/juliansci">
+         <SocialItem href="http://github.com/juliansci" target="_blank">
           <FontAwesomeIcon icon={faGithub} />
          </SocialItem>
        </FooterSocial>
