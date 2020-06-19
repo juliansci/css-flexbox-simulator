@@ -5,6 +5,7 @@ export const FlexboxActionPopupContainer = styled.div`
 `
 export const FlexboxActionPopupHeader = styled.div`
    width: 100%;
+   min-width: 300px;
    border-bottom: 1px solid gray;
    font-size: 22px;
    text-align: center;
@@ -12,7 +13,6 @@ export const FlexboxActionPopupHeader = styled.div`
    font-weight:bolder;
 `
 export const FlexboxActionPopupContent = styled.div`
-   width: 100%;
    padding: 30px 25px;
 `
 

@@ -47,7 +47,7 @@ export const FlexboxActionSectionItemsContainer = styled.div`
 `
 
 export const FlexboxActionSectionItem = styled.div`  
-   margin: 15px 0px;
+   margin: 7px 0px;
 `
 
 export const FlexboxActionSectionItemTitle = styled.div`
