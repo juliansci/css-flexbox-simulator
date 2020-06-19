@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "022b04edb51c7f87e8fdb32de00c5c29",
+    "revision": "134c1c1919234cc823e15cbfce10aa82",
     "url": "/css-flexbox-simulator/index.html"
   },
   {
-    "revision": "8cfab9b5224f1e098307",
-    "url": "/css-flexbox-simulator/static/css/main.fef0b0f6.chunk.css"
+    "revision": "7e623570094b6d8d6c9a",
+    "url": "/css-flexbox-simulator/static/css/main.01268baa.chunk.css"
   },
   {
     "revision": "4166490cc1af8b0cb42a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css-flexbox-simulator/static/js/2.e1337e2f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8cfab9b5224f1e098307",
-    "url": "/css-flexbox-simulator/static/js/main.78ed1a57.chunk.js"
+    "revision": "7e623570094b6d8d6c9a",
+    "url": "/css-flexbox-simulator/static/js/main.67cba983.chunk.js"
   },
   {
     "revision": "af9e9df36542ed60b611",
