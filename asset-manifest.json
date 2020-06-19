@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/css-flexbox-simulator/static/css/main.01268baa.chunk.css",
-    "main.js": "/css-flexbox-simulator/static/js/main.692b38f8.chunk.js",
-    "main.js.map": "/css-flexbox-simulator/static/js/main.692b38f8.chunk.js.map",
+    "main.js": "/css-flexbox-simulator/static/js/main.a253a945.chunk.js",
+    "main.js.map": "/css-flexbox-simulator/static/js/main.a253a945.chunk.js.map",
     "runtime-main.js": "/css-flexbox-simulator/static/js/runtime-main.6528006f.js",
     "runtime-main.js.map": "/css-flexbox-simulator/static/js/runtime-main.6528006f.js.map",
     "static/js/2.3f2d5eca.chunk.js": "/css-flexbox-simulator/static/js/2.3f2d5eca.chunk.js",
     "static/js/2.3f2d5eca.chunk.js.map": "/css-flexbox-simulator/static/js/2.3f2d5eca.chunk.js.map",
     "index.html": "/css-flexbox-simulator/index.html",
-    "precache-manifest.80acbd5cfebf83580d6bc6a40aa84dc4.js": "/css-flexbox-simulator/precache-manifest.80acbd5cfebf83580d6bc6a40aa84dc4.js",
+    "precache-manifest.47f7bf447600c3a4e5c41c1e8e677687.js": "/css-flexbox-simulator/precache-manifest.47f7bf447600c3a4e5c41c1e8e677687.js",
     "service-worker.js": "/css-flexbox-simulator/service-worker.js",
     "static/css/main.01268baa.chunk.css.map": "/css-flexbox-simulator/static/css/main.01268baa.chunk.css.map",
     "static/js/2.3f2d5eca.chunk.js.LICENSE.txt": "/css-flexbox-simulator/static/js/2.3f2d5eca.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.6528006f.js",
     "static/js/2.3f2d5eca.chunk.js",
     "static/css/main.01268baa.chunk.css",
-    "static/js/main.692b38f8.chunk.js"
+    "static/js/main.a253a945.chunk.js"
   ]
 }
