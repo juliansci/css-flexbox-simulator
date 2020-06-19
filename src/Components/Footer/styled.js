@@ -12,12 +12,12 @@ export const FooterContainer = styled.div`
 
 export const FooterText = styled.div`
    font-size: 14px;
-   margin-right: 30px;
+   margin-right: 20px;
    font-weight: 700;
 `
 export const FooterSocial = styled.div`
    font-size: 14px;
-   margin-right: 30px;
+   margin-right: 20px;
    color: white;
 `
 

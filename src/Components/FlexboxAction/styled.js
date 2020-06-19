@@ -5,6 +5,9 @@ export const FlexboxActionContainer = styled.div`
    width: 100%;
    padding: 10px 20px;
    box-sizing: border-box;
+   @media (max-width: 768px) {
+      padding: 5px 5px;
+   }
 `
 
 export const FlexboxActionSection = styled.div`  

@@ -239,7 +239,7 @@ export class ReversedRadioButton extends Component {
           <RadioIcon size={iconSize} innerSize={iconInnerSize}
             checked={checked} rootColor={rootColor} pointColor={pointColor}
             disabled={disabled} disabledColor={disabledColor}
-            marginRight={padding || 16}
+            marginRight={padding || 7}
           />
           <div style={{ flex: 1 }}>
             {children}
@@ -285,22 +285,22 @@ export class RadioIcon extends Component {
 
     return {
       root: {
-        width: size || 10,
-        height: size || 10,
+        width: size || 7,
+        height: size || 7,
         padding: 3,
         backgroundColor: '#FFF',
         borderWidth: 2,
         borderRadius: '50%',
         borderStyle: 'solid',
         borderColor: disabled ? (disabledColor || '#e1e1e1') : (rootColor || '#9E9E9E'),
-        marginRight: marginRight || 0,
+        marginRight: 5 || 0,
       },
       checked: {
         borderColor: pointColor || '#8CB9FD',
       },
       inner: {
-        width: innerSize || 10,
-        height: innerSize || 10,
+        width: innerSize || 7,
+        height: innerSize || 7,
         borderRadius: '50%',
         background: pointColor || '#8CB9FD',
       }
