@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import { AppLayout, HeaderLayout, ContentLayout, FlexboxSimulatorLayout, FlexboxActionLayout, FooterLayout } from './styled';
 
@@ -5,7 +6,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import FlexboxAction from '../FlexboxAction/FlexboxAction';
 import FlexboxSimulator from '../FlexboxSimulator/FlexboxSimulator';
-
+import ReactGA from 'react-ga';
 class App extends Component{
 
   constructor(props) {
@@ -20,6 +21,8 @@ class App extends Component{
         'alignContent': 'stretch'
       }
     };
+    ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALITYCS_KEY);
+    ReactGA.pageview(window.location.pathname);
   }
 
   updateStateActions = async (toUpdate)  => {

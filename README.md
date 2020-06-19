@@ -6,7 +6,7 @@ Built in ReactJS.
 
 ***Live Demo:*** https://juliansci.github.io/css-flexbox-simulator/
 
-## Run project
+## Usage
 
 Simply you have to run
 
@@ -22,3 +22,6 @@ npm start
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

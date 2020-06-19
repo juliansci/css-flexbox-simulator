@@ -6,13 +6,11 @@ class FlexboxSimulator extends Component {
 
   render() {
     const {itemsQuantity, values} = this.props;
-    console.log('itemsQuantity: ', itemsQuantity);
     return (<FlexboxSimulatorContainer backgroundImg={backgroundSimulator} simulatorProps={values}>
           {Array.apply(null, { length: itemsQuantity }).map((e, index) => {
-            return (<FlexboxSimulatorItem>
+            return (<FlexboxSimulatorItem key={index}>
               {index + 1}
             </FlexboxSimulatorItem>);
-          
           })}
     </FlexboxSimulatorContainer>);
   }
