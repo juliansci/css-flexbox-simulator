@@ -12,6 +12,10 @@ export const HeaderContainer = styled.div`
 export const HeaderTitle = styled.div`
    font-size: 27px;
    padding: 18px 40px;
+   @media (max-width: 768px) {
+      font-size: 20px;
+      padding: 12px 40px;
+   }
 `
 export const HeaderLinkGithub = styled.a`
    font-size: 13px;
@@ -20,4 +24,8 @@ export const HeaderLinkGithub = styled.a`
    cursor: pointer;
    color: white;
    text-decoration: none;
+   @media (max-width: 768px) {
+      margin-top: 19px;
+      margin-right: 3px;
+   }
 `

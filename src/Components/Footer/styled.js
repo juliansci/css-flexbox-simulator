@@ -21,6 +21,11 @@ export const FooterSocial = styled.div`
    color: white;
 `
 
+export const NameItem = styled.a`
+   color: white;
+   text-decoration: none;
+`
+
 export const SocialItem = styled.a`
    color: white;
    margin-right: 15px;
