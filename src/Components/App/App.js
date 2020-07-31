@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer';
 import FlexboxAction from '../FlexboxAction/FlexboxAction';
 import FlexboxSimulator from '../FlexboxSimulator/FlexboxSimulator';
 import ReactGA from 'react-ga';
-class App extends Component{
+class App extends Component {
 
   constructor(props) {
     super(props);
@@ -25,26 +25,27 @@ class App extends Component{
     ReactGA.pageview(window.location.pathname);
   }
 
-  updateStateActions = async (toUpdate)  => {
-    await this.setState({'simulator': {
-      ...toUpdate
-    }});
-    console.log('state app', this.state);
+  updateStateActions = async (toUpdate) => {
+    await this.setState({
+      'simulator': {
+        ...toUpdate
+      }
+    });
   }
 
   removeItem = () => {
     const itemsQuantity = this.state.itemsQuantity;
-    if(itemsQuantity > 1){
+    if (itemsQuantity > 1) {
       const newValue = itemsQuantity - 1;
-      this.setState({itemsQuantity: newValue});
+      this.setState({ itemsQuantity: newValue });
     }
   }
 
   addItem = () => {
     const itemsQuantity = this.state.itemsQuantity;
-    if(itemsQuantity < 20){
+    if (itemsQuantity < 20) {
       const newValue = itemsQuantity + 1;
-      this.setState({itemsQuantity: newValue});
+      this.setState({ itemsQuantity: newValue });
     }
   }
 
@@ -52,18 +53,18 @@ class App extends Component{
     return (
       <AppLayout>
         <HeaderLayout>
-          <Header/>
+          <Header />
         </HeaderLayout>
         <ContentLayout>
           <FlexboxActionLayout>
-            <FlexboxAction updateValues={this.updateStateActions} removeItem={this.removeItem} addItem={this.addItem}/>
+            <FlexboxAction updateValues={this.updateStateActions} removeItem={this.removeItem} addItem={this.addItem} />
           </FlexboxActionLayout>
           <FlexboxSimulatorLayout>
             <FlexboxSimulator values={this.state.simulator} itemsQuantity={this.state.itemsQuantity} />
           </FlexboxSimulatorLayout>
         </ContentLayout>
         <FooterLayout>
-          <Footer/>
+          <Footer />
         </FooterLayout>
       </AppLayout>
     );
