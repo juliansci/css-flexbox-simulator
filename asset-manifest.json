@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/css-flexbox-simulator/static/css/main.01268baa.chunk.css",
-    "main.js": "/css-flexbox-simulator/static/js/main.b00fc1b2.chunk.js",
-    "main.js.map": "/css-flexbox-simulator/static/js/main.b00fc1b2.chunk.js.map",
-    "runtime-main.js": "/css-flexbox-simulator/static/js/runtime-main.6528006f.js",
-    "runtime-main.js.map": "/css-flexbox-simulator/static/js/runtime-main.6528006f.js.map",
-    "static/js/2.3f2d5eca.chunk.js": "/css-flexbox-simulator/static/js/2.3f2d5eca.chunk.js",
-    "static/js/2.3f2d5eca.chunk.js.map": "/css-flexbox-simulator/static/js/2.3f2d5eca.chunk.js.map",
+    "main.css": "/css-flexbox-simulator/static/css/main.5f0653ef.chunk.css",
+    "main.js": "/css-flexbox-simulator/static/js/main.00ea0ad3.chunk.js",
+    "main.js.map": "/css-flexbox-simulator/static/js/main.00ea0ad3.chunk.js.map",
+    "runtime-main.js": "/css-flexbox-simulator/static/js/runtime-main.78e49d4f.js",
+    "runtime-main.js.map": "/css-flexbox-simulator/static/js/runtime-main.78e49d4f.js.map",
+    "static/js/2.23596639.chunk.js": "/css-flexbox-simulator/static/js/2.23596639.chunk.js",
+    "static/js/2.23596639.chunk.js.map": "/css-flexbox-simulator/static/js/2.23596639.chunk.js.map",
     "index.html": "/css-flexbox-simulator/index.html",
-    "precache-manifest.b57b0d89c582a9ad18bb1b9c92c7db81.js": "/css-flexbox-simulator/precache-manifest.b57b0d89c582a9ad18bb1b9c92c7db81.js",
-    "service-worker.js": "/css-flexbox-simulator/service-worker.js",
-    "static/css/main.01268baa.chunk.css.map": "/css-flexbox-simulator/static/css/main.01268baa.chunk.css.map",
-    "static/js/2.3f2d5eca.chunk.js.LICENSE.txt": "/css-flexbox-simulator/static/js/2.3f2d5eca.chunk.js.LICENSE.txt",
-    "static/media/background-simulator.jpg": "/css-flexbox-simulator/static/media/background-simulator.70a1a6a2.jpg"
+    "static/css/main.5f0653ef.chunk.css.map": "/css-flexbox-simulator/static/css/main.5f0653ef.chunk.css.map",
+    "static/js/2.23596639.chunk.js.LICENSE.txt": "/css-flexbox-simulator/static/js/2.23596639.chunk.js.LICENSE.txt",
+    "static/media/background-simulator.c84796e5.jpg": "/css-flexbox-simulator/static/media/background-simulator.c84796e5.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6528006f.js",
-    "static/js/2.3f2d5eca.chunk.js",
-    "static/css/main.01268baa.chunk.css",
-    "static/js/main.b00fc1b2.chunk.js"
+    "static/js/runtime-main.78e49d4f.js",
+    "static/js/2.23596639.chunk.js",
+    "static/css/main.5f0653ef.chunk.css",
+    "static/js/main.00ea0ad3.chunk.js"
   ]
 }
