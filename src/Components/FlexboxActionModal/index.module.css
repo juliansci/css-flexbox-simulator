@@ -1,0 +1,46 @@
+.container {
+  font-size: 15px;
+}
+.header {
+  width: 100%;
+  min-width: 300px;
+  border-bottom: 1px solid gray;
+  font-size: 22px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.content {
+  padding: 30px 25px;
+}
+
+.actionClose {
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.globalDescription {
+  margin-bottom: 15px;
+}
+
+.globalDescription .values {
+  margin-top: 5px;
+}
+
+.globalDescription .values .value {
+  font-weight: bolder;
+}
+
+.modalTriggerIcon {
+  cursor: pointer;
+  display: inline-block;
+}

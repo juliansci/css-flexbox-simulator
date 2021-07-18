@@ -1,0 +1,42 @@
+.appLayout {
+  display: grid;
+  grid-template-rows: 70px minmax(200px, auto) 50px;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+.headerLayout {
+  grid-row: 1 / 2;
+}
+
+.contentLayout {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 40% 60%;
+}
+
+.flexboxActionLayout {
+  grid-column: 1 / 2;
+  overflow-y: scroll;
+}
+
+.flexboxSimulatorLayout {
+  grid-column-start: 2;
+  overflow: auto;
+}
+
+.footerLayout {
+  grid-template-rows: 1fr;
+}
+
+@media (max-width: 768px) {
+  .contentLayout {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 500) {
+  .contentLayout {
+    grid-template-columns: 60% 40%;
+  }
+}

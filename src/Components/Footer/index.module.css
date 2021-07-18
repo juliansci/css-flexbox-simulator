@@ -1,0 +1,30 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #0c090a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.name {
+  font-size: 14px;
+  margin-right: 20px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.socialContainer {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.socialItem {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}

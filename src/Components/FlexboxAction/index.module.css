@@ -1,0 +1,60 @@
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  @media (max-width: 768px) {
+    padding: 5px 5px;
+  }
+}
+
+.section {
+  margin-top: 20px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .title {
+  font-size: 20px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.header .buttonAdd {
+  background-color: green;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+}
+
+.header .buttonRemove {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+  background-color: red;
+  margin-right: 10px;
+}
+
+.sectionItem {
+  margin: 15px 0px;
+  padding-top: 20px;
+}
+.sectionItem:not(:first-child) {
+  border-top: 1px dashed black;
+}
+.sectionItem .title {
+  font-weigth: 700;
+}
+.sectionItem .options {
+  margin-top: 10px;
+}
