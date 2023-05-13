@@ -18,6 +18,12 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/FlexboxActionModal/index.jsx", "src/components/FlexboxAction/index.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/Components/FlexboxActionModal/index.jsx",
+    "src/Components/FlexboxAction/index.jsx"
+  ],
   "exclude": ["node_modules"]
 }

@@ -1,9 +1,9 @@
 import FlexboxSimulatorBackground from "@/components/FlexboxSimulatorBackground/FlexboxSimulatorBackground";
 import React, { useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import FlexboxAction from "../components/FlexboxAction";
-import FlexboxSimulator from "../components/FlexboxSimulator";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import FlexboxAction from "@/components/FlexboxAction";
+import FlexboxSimulator from "@/components/FlexboxSimulator";
 
 export const initialSimulatorData = {
   justifyContent: "flex-start",

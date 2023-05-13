@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-key */
 
 import React from "react";
-import FlexboxActionModal from "../FlexboxActionModal";
 import flexboxActionItemsData from "./itemsData.json";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import styles from "./index.module.css";
+import FlexboxActionModal from "../FlexboxActionModal";
 
 const FlexboxAction = ({
   updateValues,
@@ -21,7 +21,6 @@ const FlexboxAction = ({
       [style]: value,
     });
   };
-  console.log("simulatorData: ", simulatorData);
   return (
     <div className={styles.container}>
       <div className={styles.section}>
