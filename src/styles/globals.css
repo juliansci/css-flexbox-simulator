@@ -18,18 +18,6 @@ code {
   background-color: #ffffff;
 }
 
-.app-layout {
-  display: grid;
-  grid-template-rows: 70px minmax(200px, auto) 50px;
-  grid-template-columns: 1fr;
-  width: 100vw;
-  height: 100vh;
-}
-
-.header-layout {
-  grid-row: 1 / 2;
-}
-
 .content-layout {
   display: grid;
   grid-template-rows: 1fr;

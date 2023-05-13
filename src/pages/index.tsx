@@ -1,5 +1,5 @@
 import FlexboxSimulatorBackground from "@/components/FlexboxSimulatorBackground/FlexboxSimulatorBackground";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FlexboxAction from "@/components/FlexboxAction";
@@ -35,8 +35,8 @@ export default function Home() {
 
   return (
     <main>
-      <div className="app-layout">
-        <div className="header-layout">
+      <div className="grid grid-rows-[70px_minmax(200px,auto)_50px] grid-cols-[1fr] w-screen h-screen">
+        <div className="row-[1/2]">
           <Header />
         </div>
         <div className="content-layout">
@@ -62,4 +62,10 @@ export default function Home() {
       </div>
     </main>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
 }

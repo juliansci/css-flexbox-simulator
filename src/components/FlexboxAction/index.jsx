@@ -1,10 +1,6 @@
 /* eslint-disable react/jsx-key */
-
 import React from "react";
 import flexboxActionItemsData from "./itemsData.json";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
 import styles from "./index.module.css";
 import FlexboxActionModal from "../FlexboxActionModal";
 
@@ -21,6 +17,8 @@ const FlexboxAction = ({
       [style]: value,
     });
   };
+  console.log(simulatorData);
+  console.log(flexboxActionItemsData);
   return (
     <div className={styles.container}>
       <div className={styles.section}>
@@ -44,31 +42,31 @@ const FlexboxAction = ({
                     description={flexboxActionItemData.documentation}
                   />
                 </div>
-                <div className={styles.options}>
-                  <RadioGroup
-                    row
-                    aria-label={`radio-group-${flexboxActionItemData.id}`}
-                    name={`radio-group-${flexboxActionItemData.id}`}
-                    value={simulatorData[flexboxActionItemData.id]}
-                    onChange={(event) =>
-                      onChangeOption(
-                        flexboxActionItemData.id,
-                        event.target.value
-                      )
-                    }
-                  >
-                    {flexboxActionItemData.values.map(
-                      (optionValue, indexValue) => {
-                        return (
-                          <FormControlLabel
-                            value={optionValue}
-                            control={<Radio color="primary" />}
-                            label={optionValue}
-                          />
-                        );
-                      }
-                    )}
-                  </RadioGroup>
+                <div className="mt-4 flex gap-2 flex-wrap">
+                  {flexboxActionItemData.values.map((optionValue) => {
+                    return (
+                      <div className="flex gap-1">
+                        <input
+                          id={`${flexboxActionItemData.id}-${optionValue}`}
+                          type="radio"
+                          name={`radio-group-${flexboxActionItemData.id}}`}
+                          value={optionValue}
+                          label={optionValue}
+                          onChange={(event) =>
+                            onChangeOption(
+                              flexboxActionItemData.id,
+                              event.target.value
+                            )
+                          }
+                        />
+                        <label
+                          for={`${flexboxActionItemData.id}-${optionValue}`}
+                        >
+                          {optionValue}
+                        </label>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             );
