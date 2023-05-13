@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+
 import React from "react";
 import FlexboxActionModal from "../FlexboxActionModal";
 import flexboxActionItemsData from "./itemsData.json";

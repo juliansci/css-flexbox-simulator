@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+
 import React from "react";
 
 const FlexboxSimulator = ({ itemsQuantity, values }) => {
