@@ -4,7 +4,7 @@ It is very simple flexbox simulator in which you can understand quickly how to b
 
 The main idea is to modify the flexbox-container inputs and see how the flexbox-items react.
 
-**_Live Demo:_** https://css-flexbox-simulator.vercel.app/
+**_Live Demo:_** https://juliansci.github.io/css-flexbox-simulator/
 
 ## License
 

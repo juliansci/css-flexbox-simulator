@@ -6,7 +6,7 @@ import { useFrame } from "@react-three/fiber";
 export default function Model(props) {
   const earthRef = useRef();
 
-  const { nodes, materials } = useGLTF("/models/earth.glb");
+  const { nodes, materials } = useGLTF("/css-flexbox-simulator/models/earth.glb");
   useFrame(({ clock }) => {
     const t = clock.getElapsedTime();
     earthRef.current.rotation.y = t / 30;
@@ -33,4 +33,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/models/earth.glb");
+useGLTF.preload("/css-flexbox-simulator/models/earth.glb");

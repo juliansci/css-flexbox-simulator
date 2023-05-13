@@ -3,7 +3,9 @@ import { useRef } from "react";
 
 const Spaceman = (props) => {
   const spacemanRef = useRef();
-  const { nodes, materials } = useGLTF("/models/astronaut.glb");
+  const { nodes, materials } = useGLTF(
+    "/css-flexbox-simulator/models/astronaut.glb"
+  );
 
   return (
     <>
@@ -22,4 +24,4 @@ const Spaceman = (props) => {
 };
 
 export default Spaceman;
-useGLTF.preload("/models/astronaut.glb");
+useGLTF.preload("/css-flexbox-simulator/models/astronaut.glb");

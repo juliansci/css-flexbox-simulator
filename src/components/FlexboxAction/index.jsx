@@ -11,14 +11,11 @@ const FlexboxAction = ({
   simulatorData,
 }) => {
   const onChangeOption = (style, value) => {
-    console.log(value);
     updateValues({
       ...simulatorData,
       [style]: value,
     });
   };
-  console.log(simulatorData);
-  console.log(flexboxActionItemsData);
   return (
     <div className={styles.container}>
       <div className={styles.section}>
