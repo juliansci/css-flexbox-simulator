@@ -32,6 +32,7 @@
   color: white;
   cursor: pointer;
   width: 20px;
+  box-sizing: content-box;
 }
 
 .header .buttonRemove {
@@ -43,6 +44,7 @@
   width: 20px;
   background-color: red;
   margin-right: 10px;
+  box-sizing: content-box;
 }
 
 .sectionItem {

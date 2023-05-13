@@ -1,46 +1,38 @@
 {
-  "homepage": "https://juliansci.github.io/css-flexbox-simulator",
   "name": "css-flexbox-simulator",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-brands-svg-icons": "^5.13.0",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/react-fontawesome": "^0.1.10",
-    "@material-ui/core": "^4.12.1",
-    "dotenv": "^8.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-fontawesome": "^1.7.1",
-    "react-ga": "^3.3.0",
-    "react-scripts": "^4.0.3",
-    "reactjs-popup": "^1.5.0",
-    "styled-components": "^5.3.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.0.0"
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@material-ui/core": "^4.12.4",
+    "@react-three/drei": "^9.61.3",
+    "@react-three/fiber": "^8.13.0",
+    "@react-three/postprocessing": "^2.10.0",
+    "@types/node": "20.1.4",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@types/three": "^0.152.0",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "next": "13.4.2",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fontawesome": "^1.7.1",
+    "reactjs-popup": "^2.0.5",
+    "styled-components": "^6.0.0-rc.1",
+    "tailwindcss": "3.3.2",
+    "three": "^0.150.1",
+    "typescript": "5.0.4"
   }
 }

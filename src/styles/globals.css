@@ -1,4 +1,24 @@
-.appLayout {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #000000;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.popup-content {
+  min-width: 300px;
+  background-color: #ffffff;
+}
+
+.app-layout {
   display: grid;
   grid-template-rows: 70px minmax(200px, auto) 50px;
   grid-template-columns: 1fr;
@@ -6,37 +26,38 @@
   height: 100vh;
 }
 
-.headerLayout {
+.header-layout {
   grid-row: 1 / 2;
 }
 
-.contentLayout {
+.content-layout {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 40% 60%;
 }
 
-.flexboxActionLayout {
+.flexbox-action-layout {
   grid-column: 1 / 2;
   overflow-y: scroll;
 }
 
-.flexboxSimulatorLayout {
+.flexbox-simulator-layout {
   grid-column-start: 2;
   overflow: auto;
+  position: relative;
 }
 
-.footerLayout {
+.footer-layout {
   grid-template-rows: 1fr;
 }
 
 @media (max-width: 768px) {
-  .contentLayout {
+  .content-layout {
     grid-template-columns: 50% 50%;
   }
 }
 @media (max-width: 500) {
-  .contentLayout {
+  .content-layout {
     grid-template-columns: 60% 40%;
   }
 }
