@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FlexboxAction from "@/components/FlexboxAction";
 import FlexboxSimulator from "@/components/FlexboxSimulator";
+import Head from "next/head";
 
 export const initialSimulatorData = {
   justifyContent: "flex-start",
@@ -34,33 +35,38 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <div className="grid grid-rows-[70px_minmax(200px,auto)_50px] grid-cols-[1fr] w-screen h-screen">
-        <div className="row-[1/2]">
-          <Header />
-        </div>
-        <div className="content-layout">
-          <div className="flexbox-action-layout">
-            <FlexboxAction
-              updateValues={updateSimulatorData}
-              simulatorData={simulatorData}
-              removeItem={removeItem}
-              addItem={addItem}
-            />
+    <>
+      <Head>
+        <title>CSS Flexbox Simulator</title>
+      </Head>
+      <main>
+        <div className="grid grid-rows-[70px_minmax(200px,auto)_50px] grid-cols-[1fr] w-screen h-screen">
+          <div className="row-[1/2]">
+            <Header />
           </div>
-          <div className="flexbox-simulator-layout">
-            <FlexboxSimulator
-              values={simulatorData}
-              itemsQuantity={itemsQuantity}
-            />
-            <FlexboxSimulatorBackground />
+          <div className="content-layout">
+            <div className="flexbox-action-layout">
+              <FlexboxAction
+                updateValues={updateSimulatorData}
+                simulatorData={simulatorData}
+                removeItem={removeItem}
+                addItem={addItem}
+              />
+            </div>
+            <div className="flexbox-simulator-layout">
+              <FlexboxSimulator
+                values={simulatorData}
+                itemsQuantity={itemsQuantity}
+              />
+              <FlexboxSimulatorBackground />
+            </div>
+          </div>
+          <div className="footer-layout">
+            <Footer />
           </div>
         </div>
-        <div className="footer-layout">
-          <Footer />
-        </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
 
